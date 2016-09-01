@@ -1,0 +1,15 @@
+{# src/Acme/HelloBundle/Resources/views/Hello/index.html.twig #}
+{% extends '::base.html.twig' %}
+
+{% block body %}
+Hello {{ name }} !!!!!!!
+
+<a href="{{url('acme_hello_homepage', {'name': 'sasha'} )}}">me</a>
+
+{% for i in 0..10 %}
+    <div class="{{ cycle(['odd', 'even'], i) }}" >
+	i= {{i}}
+    </div>
+{%endfor%}
+
+{% endblock %}
