@@ -1,0 +1,11 @@
+acme_store_homepage:
+    path:     /store/{name}
+    defaults: { _controller: AcmeStoreBundle:My:index }
+
+acme_store_getprof:
+    path:     /getprod/{id}
+    defaults: { _controller: AcmeStoreBundle:My:getprod }
+
+acme_store_changeprod:
+    path:     /changeprod/{id}
+    defaults: { _controller: AcmeStoreBundle:My:change }

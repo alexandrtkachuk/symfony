@@ -10,8 +10,9 @@ class DefaultController extends Controller
     /**
      * @Route("/")
      */
-    public function indexAction()
+    public function indexAction($name)
     {
-        return $this->render('AcmeStoreBundle:Default:index.html.twig');
+	return new Response('Created product id ');
+        #return $this->render('AcmeStoreBundle:Default:index.html.twig');
     }
 }
